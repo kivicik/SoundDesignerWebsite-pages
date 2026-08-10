@@ -205,7 +205,7 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
    The showreel is a portrait mobile-capture pillarboxed into a 16:9
    frame; shown at native ratio it renders as a postage stamp in a sea
    of black. Crop to the actual portrait content instead. */
-.v2 .listen-row { display: grid; grid-template-columns: minmax(220px, 300px) 1fr; gap: 28px; align-items: start; justify-content: start; }
+.v2 .listen-row { display: grid; grid-template-columns: minmax(320px, 540px) 1fr; gap: 28px; align-items: start; justify-content: start; }
 .v2 .showreel-frame {
   border-radius: 6px; overflow: hidden; border: 1px solid var(--panel-line); background: #000;
   position: sticky; top: 100px;
@@ -220,9 +220,9 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .v2 #composition-portfolio [class*="col-"] {
   width: 100%; max-width: none; margin: 0; padding: 0; float: none;
 }
-.v2 #composition-portfolio .comp-container { max-width: 480px; }
+.v2 #composition-portfolio .comp-container { max-width: 500px; }
 .v2 #composition-portfolio .comp-tracklist {
-  max-height: 500px;
+  max-height: 800px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--panel-line) transparent;
