@@ -285,7 +285,8 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
   .v2 .nav-toggle { display: block; }
   .v2 .stat-strip { grid-template-columns: repeat(2, auto); row-gap: 24px; }
   .v2 .case, .v2 .about-grid, .v2 .listen-row { grid-template-columns: 1fr; gap: 30px; }
-  .v2 .showreel-frame { position: static; max-width: 420px; }
+  .v2 .showreel-frame { position: static; max-width: 100%; aspect-ratio: auto; }
+  .v2 .showreel-frame video { height: auto; object-fit: initial; }
   .v2 .case.flip .case-media, .v2 .case.flip .case-copy { order: unset; }
   .v2 .about-photo { max-width: 220px; }
   .v2 .grid18 { grid-template-columns: repeat(2, 1fr); }
