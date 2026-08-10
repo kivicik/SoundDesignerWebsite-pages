@@ -201,17 +201,13 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .v2 .mini-title { font-size: 13.5px; font-weight: 700; color: var(--text); }
 .v2 .mini-sub { font-size: 11.5px; color: var(--text-faint); }
 
-/* ---- listen / showreel ----
-   The showreel is a portrait mobile-capture pillarboxed into a 16:9
-   frame; shown at native ratio it renders as a postage stamp in a sea
-   of black. Crop to the actual portrait content instead. */
-.v2 .listen-row { display: grid; grid-template-columns: minmax(320px, 540px) 1fr; gap: 28px; align-items: start; justify-content: start; }
+/* ---- listen / showreel ---- */
+.v2 .listen-row { display: grid; grid-template-columns: minmax(360px, 650px) 1fr; gap: 28px; align-items: start; justify-content: start; }
 .v2 .showreel-frame {
   border-radius: 6px; overflow: hidden; border: 1px solid var(--panel-line); background: #000;
   position: sticky; top: 100px;
-  aspect-ratio: 9 / 16;
 }
-.v2 .showreel-frame video { width: 100%; height: 100%; display: block; object-fit: cover; }
+.v2 .showreel-frame video { width: 100%; height: auto; display: block; }
 .v2 #composition-portfolio { padding: 0; min-width: 0; }
 .v2 #composition-portfolio .section-heading,
 .v2 #composition-portfolio .section-subheading { display: none; }
@@ -222,7 +218,7 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
 }
 .v2 #composition-portfolio .comp-container { max-width: 500px; }
 .v2 #composition-portfolio .comp-tracklist {
-  max-height: 800px;
+  max-height: 460px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--panel-line) transparent;
@@ -285,8 +281,7 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
   .v2 .nav-toggle { display: block; }
   .v2 .stat-strip { grid-template-columns: repeat(2, auto); row-gap: 24px; }
   .v2 .case, .v2 .about-grid, .v2 .listen-row { grid-template-columns: 1fr; gap: 30px; }
-  .v2 .showreel-frame { position: static; max-width: 100%; aspect-ratio: auto; }
-  .v2 .showreel-frame video { height: auto; object-fit: initial; }
+  .v2 .showreel-frame { position: static; }
   .v2 .case.flip .case-media, .v2 .case.flip .case-copy { order: unset; }
   .v2 .about-photo { max-width: 220px; }
   .v2 .grid18 { grid-template-columns: repeat(2, 1fr); }
